@@ -52,7 +52,10 @@ add_action( 'admin_menu', 'kommento_plugin_menu' );
 
 
 function kommento_plugin_options() {
-
+    if ( !current_user_can( 'manage_options' ) ) 
+    {
+       return '';
+    }
 	$komSettingsSaved = false;
 
 	if ( isset( $_POST[ 'save' ] ) ) {	
