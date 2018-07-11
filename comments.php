@@ -8,7 +8,8 @@
    $currentPost=get_post( get_the_ID() );
   
 ?>
-
+<a id="comments"></a>
+<a id="respond"></a>
 <div id="kommento_comments"> 
 
 </div> 
